@@ -13,6 +13,8 @@
 		E3278903210CE2A500FDCD92 /* Concentration.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E3278901210CE2A500FDCD92 /* Concentration.xcdatamodeld */; };
 		E3278905210CE2A600FDCD92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3278904210CE2A600FDCD92 /* Assets.xcassets */; };
 		E3278908210CE2A600FDCD92 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3278906210CE2A600FDCD92 /* LaunchScreen.storyboard */; };
+		E327891021100CC500FDCD92 /* Concentration.swift in Sources */ = {isa = PBXBuildFile; fileRef = E327890F21100CC500FDCD92 /* Concentration.swift */; };
+		E327891221100CD200FDCD92 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = E327891121100CD200FDCD92 /* Card.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		E3278904210CE2A600FDCD92 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E3278907210CE2A600FDCD92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E3278909210CE2A700FDCD92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E327890F21100CC500FDCD92 /* Concentration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Concentration.swift; sourceTree = "<group>"; };
+		E327891121100CD200FDCD92 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,8 @@
 			children = (
 				E32788FA210CE2A500FDCD92 /* AppDelegate.swift */,
 				E32788FC210CE2A500FDCD92 /* ViewController.swift */,
+				E327890F21100CC500FDCD92 /* Concentration.swift */,
+				E327891121100CD200FDCD92 /* Card.swift */,
 				E32788FE210CE2A500FDCD92 /* Main.storyboard */,
 				E3278904210CE2A600FDCD92 /* Assets.xcassets */,
 				E3278906210CE2A600FDCD92 /* LaunchScreen.storyboard */,
@@ -139,6 +145,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E32788FD210CE2A500FDCD92 /* ViewController.swift in Sources */,
+				E327891021100CC500FDCD92 /* Concentration.swift in Sources */,
+				E327891221100CD200FDCD92 /* Card.swift in Sources */,
 				E3278903210CE2A500FDCD92 /* Concentration.xcdatamodeld in Sources */,
 				E32788FB210CE2A500FDCD92 /* AppDelegate.swift in Sources */,
 			);
