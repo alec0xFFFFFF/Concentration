@@ -41,6 +41,16 @@ class Concentration {
             cards += [card, card]
         }
         //  TODO: shuffle cards
+        cards.shuffle()
     }
     
+}
+
+extension Array {
+    /** Randomizes the order of an array's elements. */
+    mutating func shuffle() {
+        for _ in indices {
+            sort { (_,_) in arc4random() < arc4random() }
+        }
+    }
 }
