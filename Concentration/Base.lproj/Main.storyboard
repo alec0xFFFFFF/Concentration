@@ -163,7 +163,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Flips: 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E0d-vB-1YW">
-                                <rect key="frame" x="115" y="711" width="144" height="67"/>
+                                <rect key="frame" x="206" y="711" width="144" height="67"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="35"/>
                                 <color key="textColor" red="0.99215686274509807" green="0.5725490196078431" blue="0.14901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -177,12 +177,20 @@
                                     <action selector="touchNewGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AWh-Qv-dHR"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score: 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aQm-mv-gfO">
+                                <rect key="frame" x="26" y="711" width="144" height="67"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="35"/>
+                                <color key="textColor" red="0.99215686270000003" green="0.57254901960000004" blue="0.14901960780000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.111818932" green="0.11183650050000001" blue="0.1118125319" alpha="1" colorSpace="calibratedRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="flipCountLabel" destination="E0d-vB-1YW" id="3kE-mZ-jJs"/>
+                        <outlet property="scoreLabel" destination="aQm-mv-gfO" id="UOZ-eA-JeM"/>
                         <outletCollection property="cardButtons" destination="D22-me-QLs" collectionClass="NSMutableArray" id="x4q-Xp-egz"/>
                         <outletCollection property="cardButtons" destination="Pi8-tl-bQW" collectionClass="NSMutableArray" id="Ynh-uD-DkK"/>
                         <outletCollection property="cardButtons" destination="Dtb-Bm-AMy" collectionClass="NSMutableArray" id="XpH-Br-Jqf"/>

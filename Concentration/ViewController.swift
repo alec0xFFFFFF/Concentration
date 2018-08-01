@@ -18,7 +18,15 @@ class ViewController: UIViewController {
         }
     }
     
+    var score = 0 {
+        didSet{
+            scoreLabel.text = "Score: \(score)"
+        }
+    }
+    
     @IBOutlet weak var flipCountLabel: UILabel!
+    
+    @IBOutlet weak var scoreLabel: UILabel!
     
     @IBOutlet var cardButtons: [UIButton]!
     
@@ -35,6 +43,7 @@ class ViewController: UIViewController {
     @IBAction func touchNewGame(_ sender: UIButton){
         emojiChoices = myTheme.getRandomTheme()
         flipCount = 0
+        score = 0
         game = Concentration(numberOfPairOfCards: (cardButtons.count + 1) / 2)
         updateViewFromModel()
     }
@@ -50,7 +59,6 @@ class ViewController: UIViewController {
                 button.setTitle("", for: UIControlState.normal)
                 button.backgroundColor = card.isMatched ? #colorLiteral(red: 1, green: 0.5763723254, blue: 0, alpha: 0) : #colorLiteral(red: 1, green: 0.5763723254, blue: 0, alpha: 1)
             }
-            
         }
     }
     
