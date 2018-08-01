@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E316062F21117723005704AF /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = E316062E21117723005704AF /* Theme.swift */; };
 		E32788FB210CE2A500FDCD92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32788FA210CE2A500FDCD92 /* AppDelegate.swift */; };
 		E32788FD210CE2A500FDCD92 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32788FC210CE2A500FDCD92 /* ViewController.swift */; };
 		E3278900210CE2A500FDCD92 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E32788FE210CE2A500FDCD92 /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E316062E21117723005704AF /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		E32788F7210CE2A500FDCD92 /* Concentration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Concentration.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E32788FA210CE2A500FDCD92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E32788FC210CE2A500FDCD92 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 				E32788FC210CE2A500FDCD92 /* ViewController.swift */,
 				E327890F21100CC500FDCD92 /* Concentration.swift */,
 				E327891121100CD200FDCD92 /* Card.swift */,
+				E316062E21117723005704AF /* Theme.swift */,
 				E32788FE210CE2A500FDCD92 /* Main.storyboard */,
 				E3278904210CE2A600FDCD92 /* Assets.xcassets */,
 				E3278906210CE2A600FDCD92 /* LaunchScreen.storyboard */,
@@ -147,6 +150,7 @@
 				E32788FD210CE2A500FDCD92 /* ViewController.swift in Sources */,
 				E327891021100CC500FDCD92 /* Concentration.swift in Sources */,
 				E327891221100CD200FDCD92 /* Card.swift in Sources */,
+				E316062F21117723005704AF /* Theme.swift in Sources */,
 				E3278903210CE2A500FDCD92 /* Concentration.xcdatamodeld in Sources */,
 				E32788FB210CE2A500FDCD92 /* AppDelegate.swift in Sources */,
 			);
