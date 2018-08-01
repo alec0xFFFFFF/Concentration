@@ -35,10 +35,11 @@ class ViewController: UIViewController {
     }
     
     @IBAction func touchNewGame(_ sender: UIButton){
+        let rand_index = Int(arc4random_uniform(UInt32(themes.count)))
+        emojiChoices = themes[rand_index]
         flipCount = 0
         game = Concentration(numberOfPairOfCards: (cardButtons.count + 1) / 2)
         updateViewFromModel()
-        emojiChoices = ["🦇", "😱", "🙀", "😈", "🎃", "👻", "🍭", "🍬", "🍎"]
     }
     
     func updateViewFromModel() {
@@ -56,8 +57,16 @@ class ViewController: UIViewController {
         }
     }
     
-    var emojiChoices = ["🦇", "😱", "🙀", "😈", "🎃", "👻", "🍭", "🍬", "🍎"]
+    var asianFlagChoices = ["🇾🇪", "🇻🇳", "🇹🇷", "🇹🇭", "🇹🇯", "🇸🇾", "🇸🇬", "🇵🇰"]
+    var africanFlagChoices = ["🇨🇲", "🇨🇮", "🇪🇹", "🇬🇶", "🇱🇸", "🇲🇱", "🇲🇼", "🇸🇿",
+                              "🇹🇬", "🇿🇲", "🇿🇼", "🇿🇦"]
+    var southAmericanFlagChoices = ["🇵🇪", "🇵🇾", "🇧🇷", "🇺🇾", "🇦🇷", "🇨🇱", "🇨🇴", "🇻🇪", "🇬🇾", "🇸🇷"]
+    var europeanFlagChoices = ["🇫🇷", "🇬🇧", "🇬🇷", "🇭🇷", "🇮🇪", "🇱🇹", "🇲🇨", "🇲🇹", "🇳🇱", "🇷🇴", "🇸🇰", "🇸🇪"]
+    var northAmericanFlagChoices = ["🇨🇷", "🇺🇸", "🇲🇽", "🇨🇦", "🇭🇳", "🇬🇹", "🇵🇦", "🇳🇮", "🇸🇻"]
+    var caribbeanFlagChoices = ["🇸🇽", "🇧🇶", "🇧🇸", "🇯🇲", "🇩🇴", "🇩🇲", "🇨🇺", "🇨🇼", "🇭🇹", "🇹🇹", "🇧🇧", "🇦🇼"]
+    lazy var themes = [africanFlagChoices, asianFlagChoices, southAmericanFlagChoices, europeanFlagChoices, northAmericanFlagChoices, caribbeanFlagChoices]
     
+    lazy var emojiChoices = themes[Int(arc4random_uniform(UInt32(themes.count)))]
     var emoji = [Int: String]()
     
     func emoji(for card: Card) -> String {
