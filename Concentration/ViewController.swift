@@ -9,20 +9,14 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    lazy var game = Concentration(numberOfPairOfCards: (cardButtons.count + 1) / 2)
     
-//    var flipCount = 0 {
-//        didSet{
-//            flipCountLabel.text = "Flips: \(flipCount)"
-//        }
-//    }
-//
-//    var score = 0 {
-//        didSet{
-//            scoreLabel.text = "Score: \(score)"
-//        }
-//    }
+    //  TODO: All new UI you add should be nicely laid out and look good in portrait mode on an iPhone X.
+    
+    //  TODO: Change the background and the “card back color” to match the theme. For example, our Halloween theme has a black background and orange card backs. Maybe a “winter” theme might have blue and white colors. A “construction” theme could be black and yellow. UIViewController has a property called view which is connected to the top-level view in the scene (i.e. the view that was black in lecture).
+    
+    //  TODO: You can find out what time it is using the Date struct. Read the documentation to figure out how it works and then use it to adjust your scoring so that the more quickly moves are made, the better the user’s score is. You can modify the scoring Required Task in doing this, but the score must still somehow be dependent on matches being rewarded and mismatches of previously-seen cards being penalized (in addition to being time-based). It’s okay if a “good score” is a low number and a “bad score” is a high number
+    
+    lazy var game = Concentration(numberOfPairOfCards: (cardButtons.count + 1) / 2)
     
     @IBOutlet weak var flipCountLabel: UILabel!
     
