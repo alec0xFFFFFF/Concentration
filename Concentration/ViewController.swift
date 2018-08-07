@@ -38,6 +38,8 @@ class ViewController: UIViewController {
     @IBAction func touchNewGame(_ sender: UIButton){
         emojiChoices = myTheme.getRandomTheme()
         game = Concentration(numberOfPairOfCards: (cardButtons.count + 1) / 2)
+        scoreLabel.text = "Score: \(game.score)"
+        flipCountLabel.text = "Flips: \(game.flipCount)"
         updateViewFromModel()
     }
     
